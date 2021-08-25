@@ -7,6 +7,32 @@
         body {
             background: #FFFFFF;
         }
+        header {
+            width: 100%;
+            height: auto;
+        }
+        nav {
+            display: flex;
+            font-size: medium;
+            width: 100%;
+            height: auto;
+            flex-direction: row; 
+            justify-content: space-between;
+        }
+        nav .left-group {
+            display: flex;
+            width: 100px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav .right-group {
+            display: flex;
+            width: 300px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
         #google-logo {
             display: flex;
             font-size: 85px;
@@ -82,24 +108,28 @@
 <body>
     <header>
         <nav>
-            <a href="">About</a>
-            <a href="">Store</a>
-            <a href="">Gmail</a>
-            <a href="">Images</a>
-            <a id="apps-logo"href="">
-                <div class="apps-logo">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </a>
-            <a id="sign-in"href="">Sign In</a>
+            <div class="left-group">
+                <a href="">About</a>
+                <a href="">Store</a>
+            </div>
+            <div class="right-group">
+                <a href="">Gmail</a>
+                <a href="">Images</a>
+                <a id="apps-logo"href="">
+                    <div class="apps-logo">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </a>
+                <a id="sign-in"href="">Sign In</a>  
+            </div>
         </nav>
     </header>
     <main>
