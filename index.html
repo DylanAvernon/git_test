@@ -7,6 +7,34 @@
         body {
             background: #FFFFFF;
         }
+        #google-logo {
+            display: flex;
+            font-size: 85px;
+            font-family: Helvetica;
+        }
+        #google-logo div {
+            flex-direction: row;
+        }
+        #google-logo .blue-text {
+            color: blue;
+        }
+        #google-logo .red-text {
+            color: red;
+        }
+        #google-logo .yellow-text {
+            color: rgb(255, 174, 0);
+        }
+        #google-logo .green-text {
+            color: green;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
         #apps-logo {
             display: grid;
             text-decoration: none;
@@ -34,13 +62,7 @@
             background: rgb(88, 88, 88);
             border-radius: 50%;
         }
-        a {
-            text-decoration: none;
-            color: black;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+        
         #sign-in{
             display: block;
             text-decoration: none;
@@ -81,7 +103,14 @@
         </nav>
     </header>
     <main>
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" />
+        <div id="google-logo">
+            <div class="blue-text">G</div>
+            <div class="red-text">o</div>
+            <div class="yellow-text">o</div>
+            <div class="blue-text">g</div>
+            <div class="green-text">l</div>
+            <div class="red-text">e</div>
+        </div>
         <form>
             <input type="text" />
             <input type="submit" value="Google Search"/>
