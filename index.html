@@ -5,13 +5,38 @@
     <meta charset="utf-8" />
     <style>
         body {
-            background: #FFFFFF;
+            background: white;
         }
         header {
             width: 100%;
             height: auto;
         }
-        nav {
+        footer {
+            width: 100%;
+            height: auto;
+        }
+        footer nav {
+            display: flex;
+            font-size: medium;
+            width: 100%;
+            height: auto;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        footer nav .left-group {
+            display: flex;
+            flex-direction: row;
+            width: 325px;
+            justify-content: space-between;
+        }
+        footer nav .right-group {
+            display: flex;
+            flex-direction: row;
+            width: 200px;
+            justify-content: space-between;
+        }
+        
+        header nav {
             display: flex;
             font-size: medium;
             width: 100%;
@@ -19,14 +44,14 @@
             flex-direction: row; 
             justify-content: space-between;
         }
-        nav .left-group {
+        header nav .left-group {
             display: flex;
             width: 100px;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
         }
-        nav .right-group {
+        header nav .right-group {
             display: flex;
             width: 300px;
             flex-direction: row;
@@ -141,7 +166,7 @@
             <div class="green-text">l</div>
             <div class="red-text">e</div>
         </div>
-        <form>
+        <form id="search-form">
             <div id="search-bar">
                 <div id="search-logo"></div>
                 <input id="search-text-area" type="text" />
@@ -152,12 +177,17 @@
         </form>
     </main>
     <footer>
-        <a href="">Advertising</a>
-        <a href="">Business</a>
-        <a href="">How Search works</a>
-        <a href="">Privacy</a>
-        <a href="">Terms</a>
-        <a href="">Settings</a>
+        <nav>
+        <div class="left-group">
+            <a href="">Advertising</a>
+            <a href="">Business</a>
+            <a href="">How Search works</a> 
+        </div>
+        <div class="right-group">
+            <a href="">Privacy</a>
+            <a href="">Terms</a>
+            <a href="">Settings</a>
+        </div>
     </footer>
 </body>
 </html>
