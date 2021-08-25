@@ -7,6 +7,18 @@
         body {
             background: #FFFFFF;
         }
+        #apps-logo {
+            display: grid;
+            text-decoration: none;
+            width: 50px;
+            height: 50px;
+            align-items: center;
+            justify-items: center;
+            border-radius: 50%;
+        }
+        #apps-logo:hover {
+            background: hsla(0, 0%, 0%, 0.1);
+        }
         .apps-logo {
             display: grid;
             width: 25px;
@@ -15,7 +27,6 @@
             grid-template-rows: 1fr 1fr 1fr;
             justify-items: center;
             align-items: center;
-            
         }
         .apps-logo div {
             width: 5px;
@@ -26,16 +37,22 @@
         a {
             text-decoration: none;
         }
-        
+        a:hover {
+            text-decoration: underline;
+        }
         #sign-in{
             display: block;
-            background: blue;
+            text-decoration: none;
+            background:hsl(240, 100%, 50%);
             color: white;
             width: 100px;
             height: 40px;
             text-align: center;
             line-height: 40px;
             border-radius: 10%;
+        }
+        #sign-in:hover {
+            background: hsl(205, 100%, 50%);
         }
     </style>
 </head>
@@ -46,7 +63,7 @@
             <a href="">Store</a>
             <a href="">Gmail</a>
             <a href="">Images</a>
-            <a href="">
+            <a id="apps-logo"href="">
                 <div class="apps-logo">
                     <div></div>
                     <div></div>
