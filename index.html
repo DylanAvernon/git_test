@@ -4,16 +4,42 @@
     <title>Google Homepage</title>
     <meta charset="utf-8" />
     <style>
+        html {
+            width: 100%;
+            background-color: white;
+        }
         body {
-            background: white;
+            height: 100%;
+            background: lightblue;
+        }
+        main {
+            width: 50%;
+            margin: auto;
+            background: lightcoral;
+        }
+        main #google-logo, main form {
+            width: 50%;
+            margin: auto;
+        }
+        main form #search-bar {
+            width: 50%;
+            margin: auto;
+        }
+        main form #search-buttons {
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            margin: auto;
         }
         header {
             width: 100%;
             height: auto;
+            background: red;
         }
         footer {
             width: 100%;
-            height: auto;
+            height: 100%;
+            background: orange;
         }
         footer nav {
             display: flex;
@@ -22,6 +48,7 @@
             height: auto;
             flex-direction: row;
             justify-content: space-between;
+            align-items: flex-end;
         }
         footer nav .left-group {
             display: flex;
@@ -47,6 +74,7 @@
         header nav .left-group {
             display: flex;
             width: 100px;
+            height: auto;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
@@ -54,6 +82,7 @@
         header nav .right-group {
             display: flex;
             width: 300px;
+            height: auto;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
@@ -166,14 +195,16 @@
             <div class="green-text">l</div>
             <div class="red-text">e</div>
         </div>
-        <form id="search-form">
+        <form>
             <div id="search-bar">
                 <div id="search-logo"></div>
                 <input id="search-text-area" type="text" />
                 <div id="microphone-logo"></div>
             </div>
+            <div id="search-buttons">
             <input type="submit" value="Google Search"/>
             <input type="submit" value="I'm Feeling Lucky"/>
+            </div>
         </form>
     </main>
     <footer>
