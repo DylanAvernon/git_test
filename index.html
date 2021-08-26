@@ -25,14 +25,22 @@
             background-color: blue;
             height: 100%;
         }
-        body header {
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        body #flex-container header {
             position: absolute;
             top: 0px;
             width: 100%;
             height: 50px;
             background-color: green;
         }
-        body main {
+        body #flex-container main {
             display: flex;
             position: absolute;
             top: 50px;
@@ -43,7 +51,7 @@
             height: auto;
             align-items: center;
         }
-        body footer {
+        body #flex-container footer {
             position: absolute;
             bottom: 0px;
             height: auto;
@@ -51,29 +59,7 @@
             background: rosybrown;
         }
 
-        footer nav {
-            display: flex;
-            font-size: medium;
-            width: 100%;
-            height: auto;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: flex-end;
-        }
-        footer nav .left-group {
-            display: flex;
-            flex-direction: row;
-            width: 325px;
-            justify-content: space-between;
-        }
-        footer nav .right-group {
-            display: flex;
-            flex-direction: row;
-            width: 200px;
-            justify-content: space-between;
-        }
-        
-        header nav {
+        body #flex-container header nav {
             display: flex;
             font-size: medium;
             width: 100%;
@@ -81,7 +67,7 @@
             flex-direction: row; 
             justify-content: space-between;
         }
-        header nav .left-group {
+        body #flex-container header nav .left-group {
             display: flex;
             width: 100px;
             height: auto;
@@ -89,7 +75,7 @@
             justify-content: space-between;
             align-items: center;
         }
-        header nav .right-group {
+        body #flex-container header nav .right-group {
             display: flex;
             width: 300px;
             height: auto;
@@ -97,43 +83,7 @@
             justify-content: space-between;
             align-items: center;
         }
-
-        #google-logo {
-            display: flex;
-            font-size: 85px;
-            font-family: Helvetica;
-            margin-bottom: 40px;
-        }
-        #google-logo div {
-            flex-direction: row;
-        }
-        #google-logo .blue-text {
-            color: blue;
-        }
-        #google-logo .red-text {
-            color: red;
-        }
-        #google-logo .yellow-text {
-            color: rgb(255, 174, 0);
-        }
-        #google-logo .green-text {
-            color: green;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        a {
-            text-decoration: none;
-            color: black;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        #apps-logo {
+        body #flex-container header nav .right-group #apps-logo {
             display: grid;
             text-decoration: none;
             width: 50px;
@@ -142,10 +92,10 @@
             justify-items: center;
             border-radius: 50%;
         }
-        #apps-logo:hover {
+        body #flex-container header nav .right-group #apps-logo:hover {
             background: hsla(0, 0%, 0%, 0.1);
         }
-        .apps-logo {
+        body #flex-container header nav .right-group #apps-logo .apps-logo {
             display: grid;
             width: 25px;
             height: 25px;
@@ -154,13 +104,13 @@
             justify-items: center;
             align-items: center;
         }
-        .apps-logo div {
+        body #flex-container header nav .right-group #apps-logo .apps-logo div {
             width: 5px;
             height: 5px;
             background: rgb(88, 88, 88);
             border-radius: 50%;
         }
-        #sign-in{
+        body #flex-container header nav .right-group #sign-in{
             display: block;
             text-decoration: none;
             background:hsl(240, 100%, 50%);
@@ -171,9 +121,58 @@
             line-height: 40px;
             border-radius: 10%;
         }
-        #sign-in:hover {
+        body #flex-container header nav .right-group #sign-in:hover {
             background: hsl(205, 100%, 50%);
         }
+        
+        body #flex-container main #google-logo {
+            display: flex;
+            font-size: 85px;
+            font-family: Helvetica;
+            margin-bottom: 40px;
+        }
+        body #flex-container main #google-logo div {
+            flex-direction: row;
+        }
+        body #flex-container main #google-logo .blue-text {
+            color: blue;
+        }
+        body #flex-container main #google-logo .red-text {
+            color: red;
+        }
+        body #flex-container main #google-logo .yellow-text {
+            color: rgb(255, 174, 0);
+        }
+        body #flex-container main #google-logo .green-text {
+            color: green;
+        }
+        body #flex-container main form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        body #flex-container footer nav {
+            display: flex;
+            font-size: medium;
+            width: 100%;
+            height: auto;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        body #flex-container footer nav .left-group {
+            display: flex;
+            flex-direction: row;
+            width: 325px;
+            justify-content: space-between;
+        }
+        body #flex-container footer nav .right-group {
+            display: flex;
+            flex-direction: row;
+            width: 200px;
+            justify-content: space-between;
+        }        
     </style>
 </head>
 <body>
@@ -187,7 +186,7 @@
                 <div class="right-group">
                     <a href="">Gmail</a>
                     <a href="">Images</a>
-                    <a id="apps-logo"href="">
+                    <a id="apps-logo" href="">
                         <div class="apps-logo">
                             <div></div>
                             <div></div>
@@ -220,23 +219,24 @@
                     <div id="microphone-logo"></div>
                 </div>
                 <div id="search-buttons">
-                <input type="submit" value="Google Search"/>
-                <input type="submit" value="I'm Feeling Lucky"/>
+                    <input type="submit" value="Google Search"/>
+                    <input type="submit" value="I'm Feeling Lucky"/>
                 </div>
             </form>
         </main>
         <footer>
             <nav>
-            <div class="left-group">
-                <a href="">Advertising</a>
-                <a href="">Business</a>
-                <a href="">How Search works</a> 
-            </div>
-            <div class="right-group">
-                <a href="">Privacy</a>
-                <a href="">Terms</a>
-                <a href="">Settings</a>
-            </div>
+                <div class="left-group">
+                    <a href="">Advertising</a>
+                    <a href="">Business</a>
+                    <a href="">How Search works</a> 
+                </div>
+                <div class="right-group">
+                    <a href="">Privacy</a>
+                    <a href="">Terms</a>
+                    <a href="">Settings</a>
+                </div>
+            </nav>
         </footer>
     </div>
 </body>
