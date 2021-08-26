@@ -151,7 +151,63 @@
             flex-direction: column;
             align-items: center;
         }
-
+        #search-bar input {
+            width: 100%;
+            height: 30px;
+            border-radius: 30px;
+            border: 1px #0F0 solid;
+            padding: 5px 0px 5px 30px;
+            position: absolute;
+            top: 0;
+            left: 0px;
+            
+        }
+        #search-logo {
+            position: absolute;
+            top: 6px;
+            left: 5px;
+            height: 30px;
+            width: 30px;
+            z-index: 10;
+            border-radius: 50%;
+            border: none;
+            background: #0F0;
+        }
+        #microphone-logo {
+            position: absolute;
+            top: 6px;
+            left: 497px;
+            height: 30px;
+            width: 30px;
+            z-index: 10;
+            border-radius: 50%;
+            border: none;
+            background: #0F0;
+        }
+        #search-bar {
+            position: relative;
+            width: 500px;
+            height: 50px;
+        }
+        /* body #flex-container main form #search-bar {
+            display: flex;
+            height: auto;
+        }
+        body #flex-container main form #search-bar #search-logo {
+            width: 45px;
+            height: 45px;
+            background-color: red;
+        }
+        body #flex-container main form #search-bar input {
+            background-color: gold;
+            width: 410px;
+            height: 40px;
+        }
+        body #flex-container main form #search-bar #microphone-logo {
+            width: 45px;
+            height: 45px;
+            background-color: green;
+        } */
         body #flex-container footer nav {
             display: flex;
             font-size: medium;
@@ -213,9 +269,9 @@
                 <div class="red-text">e</div>
             </div>
             <form>
-                <div id="search-bar">
-                    <div id="search-logo"></div>
-                    <input id="search-text-area" type="text" />
+                <div id="search-bar" class="search">
+                    <div id="search-logo" class="corner"></div>
+                    <input id="search-text-area" class="round" type="text" />
                     <div id="microphone-logo"></div>
                 </div>
                 <div id="search-buttons">
