@@ -5,29 +5,49 @@
     <meta charset="utf-8" />
     <style>
         html {
-            width: 100%;
             background-color: white;
         }
         body {
+            background: black;
+            display: block;
+            position: absolute;
+            height: auto;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 1px 1px 1px 1px;
+        }
+        body #flex-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: blue;
             height: 100%;
-            background: lightblue;
         }
-        main {
-            background: lightcoral;
+        body header {
+            position: absolute;
+            top: 0px;
+            background-color: green;
+            width: 100%;
+            height: auto;
         }
+        body main {
+            background: black;
+            height: 100%;
+            width: 100%;
+        }
+        body footer {
+            position: absolute;
+            bottom: 0px;
+            height: auto;
+            width: 100%;
+            background: rosybrown;
+        }
+        
         main form #search-buttons {
             display: flex;
             flex-direction: row;
-        }
-        header {
-            width: 100%;
-            height: auto;
-            background: red;
-        }
-        footer {
-            width: 100%;
-            height: 100%;
-            background: orange;
         }
         footer nav {
             display: flex;
@@ -148,6 +168,7 @@
     </style>
 </head>
 <body>
+    <div id="flex-container">
     <header>
         <nav>
             <div class="left-group">
@@ -208,5 +229,6 @@
             <a href="">Settings</a>
         </div>
     </footer>
+    </div>
 </body>
 </html>
