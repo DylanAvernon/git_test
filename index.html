@@ -28,14 +28,20 @@
         body header {
             position: absolute;
             top: 0px;
-            background-color: green;
             width: 100%;
-            height: auto;
+            height: 50px;
+            background-color: green;
         }
         body main {
+            display: flex;
+            position: absolute;
+            top: 50px;
+            margin-top: 90px;
+            flex-direction: column;
             background: black;
-            height: 100%;
             width: 100%;
+            height: auto;
+            align-items: center;
         }
         body footer {
             position: absolute;
@@ -44,11 +50,7 @@
             width: 100%;
             background: rosybrown;
         }
-        
-        main form #search-buttons {
-            display: flex;
-            flex-direction: row;
-        }
+
         footer nav {
             display: flex;
             font-size: medium;
@@ -95,10 +97,12 @@
             justify-content: space-between;
             align-items: center;
         }
+
         #google-logo {
             display: flex;
             font-size: 85px;
             font-family: Helvetica;
+            margin-bottom: 40px;
         }
         #google-logo div {
             flex-direction: row;
@@ -114,6 +118,12 @@
         }
         #google-logo .green-text {
             color: green;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         a {
@@ -150,7 +160,6 @@
             background: rgb(88, 88, 88);
             border-radius: 50%;
         }
-        
         #sign-in{
             display: block;
             text-decoration: none;
@@ -169,66 +178,66 @@
 </head>
 <body>
     <div id="flex-container">
-    <header>
-        <nav>
+        <header>
+            <nav>
+                <div class="left-group">
+                    <a href="">About</a>
+                    <a href="">Store</a>
+                </div>
+                <div class="right-group">
+                    <a href="">Gmail</a>
+                    <a href="">Images</a>
+                    <a id="apps-logo"href="">
+                        <div class="apps-logo">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </a>
+                    <a id="sign-in"href="">Sign In</a>  
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div id="google-logo">
+                <div class="blue-text">G</div>
+                <div class="red-text">o</div>
+                <div class="yellow-text">o</div>
+                <div class="blue-text">g</div>
+                <div class="green-text">l</div>
+                <div class="red-text">e</div>
+            </div>
+            <form>
+                <div id="search-bar">
+                    <div id="search-logo"></div>
+                    <input id="search-text-area" type="text" />
+                    <div id="microphone-logo"></div>
+                </div>
+                <div id="search-buttons">
+                <input type="submit" value="Google Search"/>
+                <input type="submit" value="I'm Feeling Lucky"/>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <nav>
             <div class="left-group">
-                <a href="">About</a>
-                <a href="">Store</a>
+                <a href="">Advertising</a>
+                <a href="">Business</a>
+                <a href="">How Search works</a> 
             </div>
             <div class="right-group">
-                <a href="">Gmail</a>
-                <a href="">Images</a>
-                <a id="apps-logo"href="">
-                    <div class="apps-logo">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </a>
-                <a id="sign-in"href="">Sign In</a>  
+                <a href="">Privacy</a>
+                <a href="">Terms</a>
+                <a href="">Settings</a>
             </div>
-        </nav>
-    </header>
-    <main>
-        <div id="google-logo">
-            <div class="blue-text">G</div>
-            <div class="red-text">o</div>
-            <div class="yellow-text">o</div>
-            <div class="blue-text">g</div>
-            <div class="green-text">l</div>
-            <div class="red-text">e</div>
-        </div>
-        <form>
-            <div id="search-bar">
-                <div id="search-logo"></div>
-                <input id="search-text-area" type="text" />
-                <div id="microphone-logo"></div>
-            </div>
-            <div id="search-buttons">
-            <input type="submit" value="Google Search"/>
-            <input type="submit" value="I'm Feeling Lucky"/>
-            </div>
-        </form>
-    </main>
-    <footer>
-        <nav>
-        <div class="left-group">
-            <a href="">Advertising</a>
-            <a href="">Business</a>
-            <a href="">How Search works</a> 
-        </div>
-        <div class="right-group">
-            <a href="">Privacy</a>
-            <a href="">Terms</a>
-            <a href="">Settings</a>
-        </div>
-    </footer>
+        </footer>
     </div>
 </body>
 </html>
