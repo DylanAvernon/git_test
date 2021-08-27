@@ -1,0 +1,21 @@
+body #flex-container footer nav {
+    display: flex;
+    font-size: medium;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+body #flex-container footer nav .left-group {
+    display: flex;
+    flex-direction: row;
+    width: 325px;
+    justify-content: space-between;
+}
+body #flex-container footer nav .right-group {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    justify-content: space-between;
+}      

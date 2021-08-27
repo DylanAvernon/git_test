@@ -1,0 +1,21 @@
+body #flex-container main #google-logo {
+    display: flex;
+    font-size: 85px;
+    font-family: Helvetica;
+    margin-bottom: 40px;
+}
+body #flex-container main #google-logo div {
+    flex-direction: row;
+}
+body #flex-container main #google-logo .blue-text {
+    color: blue;
+}
+body #flex-container main #google-logo .red-text {
+    color: red;
+}
+body #flex-container main #google-logo .yellow-text {
+    color: rgb(255, 174, 0);
+}
+body #flex-container main #google-logo .green-text {
+    color: green;
+}
