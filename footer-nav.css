@@ -6,6 +6,8 @@ body #flex-container footer nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 body #flex-container footer nav .left-group {
     display: flex;

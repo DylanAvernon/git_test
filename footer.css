@@ -3,4 +3,5 @@ body #flex-container footer {
     bottom: 0px;
     height: auto;
     width: 100%;
+    background: rgb(224, 222, 222);
 }
