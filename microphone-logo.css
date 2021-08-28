@@ -8,3 +8,52 @@
     border-radius: 50%;
     border: none;
 }
+#speaker {
+    position: absolute;
+    width: 6px;
+    height: 13px;
+    background: blue;
+    border-radius: 30px;
+    top: 5px;
+    right: -10px;
+    z-index: 13;
+
+}
+#rectangle-top-right {
+    position: absolute;
+    background: white;
+    width: 20px;
+    height: 12px;
+    top: 4px;
+    right: -16px;
+    z-index: 11;
+}
+#circle-block {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    top: 7px;
+    right: -14px;
+    z-index: 12;
+}
+#circle-color {
+    position: absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    top: 4px;
+    right: -16px;
+    background: linear-gradient(yellow, red);
+    transform: rotate(280deg);
+}
+#microphone-handle {
+    position: absolute;
+    width: 2px;
+    height: 5px;
+    background: chartreuse;
+    top: 24px;
+    right: -8px;
+
+}
